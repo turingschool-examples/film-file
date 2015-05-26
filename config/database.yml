@@ -1,0 +1,13 @@
+# specify which database and adapter to use for which environment
+
+development:
+  adapter: sqlite3
+  database: db/task-manager-development
+
+test:
+  adapter: sqlite3
+  database: db/task-manager-test
+
+production:
+  adapter: sqlite3
+  database: db/task-manager-production
