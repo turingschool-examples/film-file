@@ -1,5 +1,5 @@
 class TaskManager < Sinatra::Base
   get '/tasks' do
-    erb :index
+    erb :tasks_index
   end
 end
