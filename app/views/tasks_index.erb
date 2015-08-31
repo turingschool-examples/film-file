@@ -4,5 +4,6 @@
   <% @tasks.each do |task| %>
     <h3><%= task.title %></h3>
     <p><%= task.description %></p>
+    <p>User: <%= task.user.name %></p>
   <% end %>
 </div>
