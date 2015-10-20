@@ -5,7 +5,7 @@
     <h3><%= user.name %></h3>
     <% user.tasks.each do |task| %>
       <p><%= task.title %></p>
-      <p><%= task.status.name %></p>
+      <p><%= task.status.name if task.status %></p>
       <% end %>
   <% end %>
 </div>
