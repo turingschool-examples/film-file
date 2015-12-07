@@ -2,12 +2,12 @@
 
 development:
   adapter: sqlite3
-  database: db/task-manager-development
+  database: db/film-file-development
 
 test:
   adapter: sqlite3
-  database: db/task-manager-test
+  database: db/film-file-test
 
 production:
   adapter: sqlite3
-  database: db/task-manager-production
+  database: db/film-file-production
