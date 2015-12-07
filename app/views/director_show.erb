@@ -1,0 +1,9 @@
+<h1><%= @director.name %></h1>
+
+<h4>Total Box Office Sales: <%= @director.films.total_sales %></h4>
+<h4>Average Box Office Sales: <%= @director.films.average_sales %></h4>
+
+<% @director.films.each do |film| %>
+  <p><%= film.title %></p>
+  <p><%= film.box_office_sales %></p>
+<% end %>

@@ -1,4 +1,4 @@
-class FilmFile < Sinatra::Base
+class FilmFile < Sinatra::Base  
   get '/films' do
     @films = Film.all
     erb :films_index
@@ -6,5 +6,10 @@ class FilmFile < Sinatra::Base
   get '/genres' do
     @genres = Genre.all
     erb :genres_index
+  end
+
+  get '/directors/:id' do |id|
+    @director = Director.find(id)
+    erb :director_show
   end
 end
