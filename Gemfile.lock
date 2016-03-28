@@ -25,6 +25,7 @@ GEM
       rack (>= 1.0.0)
       rack-test (>= 0.5.4)
       xpath (~> 2.0)
+    database_cleaner (1.5.1)
     i18n (0.7.0)
     json (1.8.3)
     mime-types (3.0)
@@ -75,7 +76,9 @@ PLATFORMS
 DEPENDENCIES
   activerecord
   capybara
+  database_cleaner
   minitest
+  rack-test
   shotgun
   sinatra
   sinatra-activerecord
