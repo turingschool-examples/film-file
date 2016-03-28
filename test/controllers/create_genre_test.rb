@@ -21,4 +21,11 @@ class CreateGenreTest < Minitest::Test
     assert_equal 200, last_response.status
     assert_equal "Genre created.", last_response.body
   end
+
+  def test_cannot_create_a_genre_without_a_name
+    post '/genres', { genre: { } }
+    assert_equal 0, Genre.count
+    assert_equal 400, last_response.status
+    assert_equal "missing name", last_response.body
+  end
 end
