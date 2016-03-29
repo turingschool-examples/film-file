@@ -8,6 +8,7 @@ gem 'sinatra-activerecord'
 group :development, :test do
   gem 'shotgun'
   gem 'minitest'
+  gem "pry"
   gem 'tux'
   gem 'capybara'
 end
