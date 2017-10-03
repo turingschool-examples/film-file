@@ -7,7 +7,8 @@ gem 'sinatra-activerecord'
 
 group :development, :test do
   gem 'shotgun'
-  gem 'minitest'
+  gem 'rspec'
   gem 'tux'
   gem 'capybara'
+  gem 'database_cleaner'
 end
