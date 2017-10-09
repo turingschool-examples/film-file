@@ -1,4 +1,6 @@
 class Film < ActiveRecord::Base
+  belongs_to :genre
+
   validates :title, presence: true, uniqueness: true
 
 
