@@ -1,7 +1,10 @@
-<% @films.each do |film| %>
-  <ul>
-    <li><%= film.title %></li>
-    <li><%= film.year %></li>
-    <li> <%= film.box_office_sales %></li>
-  </ul>
-<% end %>
+<h1>All Films</h1>
+
+<div class="films">
+  <% @films.each do |film| %>
+    <h3><%= film.title  %></h3>
+    <p><%= film.year  %></p>
+    <p><%= film.box_office_sales %></p>
+  <% end %>
+
+</div>

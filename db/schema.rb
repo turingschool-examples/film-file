@@ -10,10 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171127222001) do
+ActiveRecord::Schema.define(version: 20171127221952) do
 
   create_table "films", force: :cascade do |t|
-    t.text "title"
+    t.string "title"
     t.integer "year"
     t.integer "box_office_sales"
   end
