@@ -10,12 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171127221952) do
+ActiveRecord::Schema.define(version: 20171129183052) do
 
   create_table "films", force: :cascade do |t|
-    t.string "title"
+    t.text "title"
     t.integer "year"
     t.integer "box_office_sales"
+    t.integer "genre_id"
+  end
+
+  create_table "genres", force: :cascade do |t|
+    t.string "name"
   end
 
 end
