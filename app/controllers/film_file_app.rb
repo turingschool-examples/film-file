@@ -1,4 +1,8 @@
 class FilmFile < Sinatra::Base
+  get '/' do
+    erb :home
+  end
+
   get '/films' do
     @films = Film.all
     erb :"films/index"
@@ -6,6 +10,6 @@ class FilmFile < Sinatra::Base
 
   get '/films/:id' do
     film = Film.find(params[:id])
-    erb :"films/show",  locals: { film: film } 
+    erb :"films/show",  locals: { film: film }
   end
 end
