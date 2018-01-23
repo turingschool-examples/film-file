@@ -10,4 +10,7 @@ group :development, :test do
   gem 'minitest'
   gem 'tux'
   gem 'capybara'
+  gem 'rspec'
+  gem 'pry'
+  gem 'database_cleaner'
 end
