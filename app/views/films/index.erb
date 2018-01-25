@@ -1,7 +1,16 @@
+<head>
+  <link rel="stylesheet" href="stylesheets/css/master.css">
+</head>
+
 <% @films.each do |film|  %>
   <ul>
     <li> <%= film.title %></li>
     <li> <%= film.year %></li>
     <li> <%= film.box_office_sales %></li>
+
+
+
+
+    <li> <%= film.genre.name %> </li>
   </ul>
 <% end %>
