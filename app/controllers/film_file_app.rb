@@ -1,4 +1,8 @@
-class FilmFile < Sinatra::Base
+class FilmFileApp < Sinatra::Base
+
+  get '/' do
+    erb :welcome
+  end
 
   get '/films' do
     @films = Film.all
