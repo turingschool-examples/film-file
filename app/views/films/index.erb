@@ -1,0 +1,8 @@
+<% @films.each do |film| %>
+  <ul>
+    <li>Title: <%= film.title %></li>
+    <li>Year: <%= film.year %></li>
+    <li>Box Office Sales: <%= film.box_office_sales %></li>
+    <li>Genre: <%= film.genre.name %></li>
+  </ul>
+<% end %>
